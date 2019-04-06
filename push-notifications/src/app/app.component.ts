@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
 
   }
   ngOnInit() {
-    // this.notification.show('We are in about component!', { cssClass: 'alert-danger', timeout: 4000 });
+    this.notification.show('We are in about component!', { cssClass: 'alert-danger', timeout: 4000 });
     // this.notification.grayOut(true);
     // this.notification.grayOut(false);
   }

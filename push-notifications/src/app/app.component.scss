@@ -49,5 +49,31 @@
     bottom: 50px;
     right: 160px;
 }
+.pDescription{
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: 1px;
+        font-weight: 500;
+}
+.centerItems{
+    margin-top: 30px;
+    // display: flex;
+    // text-align: center;
+    // justify-content: center;
+}
+.butonShowAlert{
+    padding: 5px 0px 5px 0px;
+    width: 50%;
+    border-radius: 50px;
+    border: 2px solid #00B09B;
+    background-color: #780096;
+    color: white;
+    font-weight: 500;
+    &:hover{
+        background-color: white;
+        color: #780096 ;
+    }
+}
 
 

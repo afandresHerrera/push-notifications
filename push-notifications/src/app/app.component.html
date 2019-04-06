@@ -12,7 +12,6 @@
             <a (click)="this.viewLogin=true" href="#">Login</a>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <!-- <form> -->
             <div class="form-group">
                 <label>Email</label>
                 <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email"
@@ -29,7 +28,6 @@
 
             <button type="button" class="btn btn-primary" (click)="validate()"
                 style="margin-top: 20px;">Register</button>
-            <!-- </form> -->
         </div>
     </div>
 </div>
@@ -44,7 +42,6 @@
             <a (click)="this.viewLogin=true" href="#">Login</a>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <!-- <form> -->
             <div class="form-group">
                 <label>Email</label>
                 <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email"
@@ -56,7 +53,6 @@
             </div>
 
             <button type="button" class="btn btn-primary" (click)="login()" style="margin-top: 20px;">Login</button>
-            <!-- </form> -->
         </div>
     </div>
 </div>
@@ -83,4 +79,28 @@
     <div class="col-md-12 text-center">
         <h3 class="titlePrincipal">TELEPERFORMANCE</h3>
     </div>
+    <div class="col-md-12 text-center">
+        <p class="pDescription">
+            En esta seccion puedes ejecutar cada una de las alertas. <br>
+            activando la alerta "show" damos click en la alerta y regresaras al registro.
+        </p>
+    </div>
+    <div class="col-md-1 centerItems"></div>
+
+    <div class="col-md-2 centerItems">
+        <button (click)="success()" class="butonShowAlert">success</button>
+    </div>
+    <div class="col-md-2 centerItems">
+        <button (click)="error()" class="butonShowAlert">error</button>
+    </div>
+    <div class="col-md-2 centerItems">
+        <button (click)="warning()" class="butonShowAlert">warning</button>
+    </div>
+    <div class="col-md-2 centerItems">
+        <button (click)="info()" class="butonShowAlert">info</button>
+    </div>
+    <div class="col-md-2 centerItems">
+        <button (click)="show()" class="butonShowAlert">show</button>
+    </div>
+    <div class="col-md-1 centerItems"></div>
 </div>

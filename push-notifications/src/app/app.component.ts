@@ -30,23 +30,23 @@ export class AppComponent implements OnInit {
   }
 
   success() {
-    this.pushMessage.success('Hello world!', 'Toastr fun!');
+    this.pushMessage.success('alert success!', 'Test!!!');
 
   }
   error() {
-    this.pushMessage.error('Hello world!', 'toast-info');
+    this.pushMessage.error('alert error!', 'Test!!!');
 
   }
   warning() {
-    this.pushMessage.warning('Hello world!', 'Toastr fun!');
+    this.pushMessage.warning('alert warning!', 'Test!!!');
 
   }
   info() {
-    this.pushMessage.info('Hello world!', 'Toastr fun!');
+    this.pushMessage.info('alert info!', 'Test!!!');
 
   }
   show() {
-    this.pushMessage.show('Hello world!', 'Toastr fun!')
+    this.pushMessage.show('alert show!', 'Test!!!')
       .onTap
       .subscribe(() => location.reload());
 

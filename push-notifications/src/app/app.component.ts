@@ -65,16 +65,16 @@ export class AppComponent implements OnInit {
             this.viewLogin = true
           }, 1000);
         } else {
-          this.pushMessage.show('tus contraseñas no coinciden', 'Ups!!');
+          this.pushMessage.info('tus contraseñas no coinciden', 'Ups!!');
           this.notification.show('Las contraseñas no coinciden intente nuevamente', { cssClass: 'alert-danger', timeout: 3000 });
         }
 
       } else {
-        this.pushMessage.show('completa todos los campos', 'Ups!!');
+        this.pushMessage.info('completa todos los campos', 'Ups!!');
         this.notification.show('Por favor diligencie todos los campos', { cssClass: 'alert-danger', timeout: 3000 });
       }
     } else {
-      this.pushMessage.show('Algo salio mal', 'Ups!!');
+      this.pushMessage.info('Algo salio mal', 'Ups!!');
       this.notification.show('Por favor ingrese un correo valido', { cssClass: 'alert-danger', timeout: 3000 });
     }
     console.log(this.email);
@@ -95,16 +95,16 @@ export class AppComponent implements OnInit {
             this.viewHome = true
           }, 1000);
         } else {
-          this.pushMessage.show('Algo salio mal', 'Ups!!');
+          this.pushMessage.info('Algo salio mal', 'Ups!!');
           this.notification.show('Usuario o contraseña invalidos por favor intente nuevamente. ', { cssClass: 'alert-danger', timeout: 3000 });
         }
 
       } else {
-        this.pushMessage.show('Algo salio mal', 'Ups!!');
+        this.pushMessage.info('Algo salio mal', 'Ups!!');
         this.notification.show('Por favor diligencie todos los campos', { cssClass: 'alert-danger', timeout: 3000 });
       }
     } else {
-      this.pushMessage.show('Algo salio mal', 'Ups!!');
+      this.pushMessage.info('Algo salio mal', 'Ups!!');
       this.notification.show('Por favor ingrese un correo valido', { cssClass: 'alert-danger', timeout: 3000 });
     }
   }
